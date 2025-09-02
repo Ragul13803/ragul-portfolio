@@ -8,7 +8,7 @@ export const personalData = {
   address: 'Pondicherry - 605 005 ',
   github: 'https://github.com/Ragul13803',
   // facebook: 'https://www.facebook.com/abusaid.riyaz/',
-  linkedIn: 'https://www.linkedin.com/in/abu-said-bd/',
+  linkedIn: 'https://in.linkedin.com/in/ragul-suresh13802',
   // twitter: 'https://twitter.com/said7388',
   // stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
   // leetcode: "https://leetcode.com/said3812/",
