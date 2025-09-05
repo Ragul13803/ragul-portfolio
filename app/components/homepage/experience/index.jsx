@@ -37,7 +37,7 @@ function Experience() {
           </div>
 
           <div>
-            <div className="flex flex-col gap-6">
+            {/* <div className="flex flex-col gap-6">
               {
                 experiences.map(experience => (
                   <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
@@ -71,7 +71,7 @@ function Experience() {
                   </GlowCard>
                 ))
               }
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
