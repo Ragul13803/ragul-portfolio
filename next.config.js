@@ -1,9 +1,23 @@
-const path = require('path')
- 
-module.exports = {
+// next.config.js
+
+const path = require('path');
+
+// Optional: Enable bundle analyzer (run with ANALYZE=true npm run build)
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Helps catch potential issues in development
+  reactStrictMode: true,
+
+  // Allow importing SCSS from the styles directory without relative paths
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+
+  // Enable loading and optimizing images from external domains
   images: {
     remotePatterns: [
       {
@@ -23,4 +37,11 @@ module.exports = {
       },
     ],
   },
-}
+
+  // Optional: Enable experimental features if needed
+  // experimental: {
+  //   appDir: true,
+  // },
+};
+
+module.exports = withBundleAnalyzer(nextConfig);
